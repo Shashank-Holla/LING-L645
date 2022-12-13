@@ -7,7 +7,9 @@ This repo contains code to train a convolutional and natural language based mode
 
 ## Highlights
 
-1. Pytorch framework based Convolution - Language model trained on Visual Question Answering dataset.
+1. Image context extraction model pretrained is VGG19, pretrained on ImageNet dataset.
+2. LSTM based language model used for encoding natural language questions.
+3. Stacked Attention Network for answering questions. 
 
 
 
@@ -21,7 +23,9 @@ pip install -r requirements.txt
 
 ## Dataset
 
-[VQA dataset](https://visualqa.org/) has been used for the model training and inference. To download and prepare the dataset-
+[VQA dataset](https://visualqa.org/) has been used for the model training and inference. This dataset contains open-ended questions about images. The images are from COCO dataset and contain about 80,000 training images.
+
+To download and prepare the dataset-
 
 ```
 python3 prepare_data.py './data'
