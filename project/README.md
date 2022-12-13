@@ -7,11 +7,15 @@ This repo contains code to train a convolutional and natural language based mode
 
 ## Highlights
 
+1. Pytorch framework based Convolution - Language model trained on Visual Question Answering dataset.
+
+
+
 ## Install the dependencies
 
+To install the dependencies, execute-
 ```
 pip install -r requirements.txt
-
 ```
 
 
@@ -29,6 +33,10 @@ python3 prepare_data.py './data'
 
 ```
 python3 main.py --epochs 8 --batch_size 32
+
+a. epochs - Number of epochs to train the model
+
+b. batch_size - Number of images in a batch to train
 ```
 
 ## References
@@ -39,4 +47,8 @@ python3 main.py --epochs 8 --batch_size 32
 
 3. [Visual Question Answering dataset](https://visualqa.org/)
 
+## TODO
 
+1. Implement GradCAM to understand the focus of the model while trying to answer the question.
+
+2. Explore multi-word answers
