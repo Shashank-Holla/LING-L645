@@ -9,7 +9,10 @@ This repo contains code to train a convolutional and natural language based mode
 
 ## Install the dependencies
 
+```
 pip install -r requirements.txt
+
+```
 
 
 ## Dataset
@@ -20,7 +23,13 @@ pip install -r requirements.txt
 python3 prepare_data.py './data'
 ```
 
-## Results
+
+
+## Training and inference
+
+```
+python3 main.py --epochs 8 --batch_size 32
+```
 
 ## References
 
